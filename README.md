@@ -8,7 +8,7 @@ Find best options for ImageMagick JPEG conversion for:
 
 ## How it's done
 Variating different settings we've got a different images. 
-Size and images comparision published at http://test-imagick-jpeg-settings.d4m.ru/
+Size and images comparision matrix published at http://test-imagick-jpeg-settings.d4m.ru/
 
 ## Conclusion
 1. Use settings ``-sampling-factor 4:2:0 -colorspace sRGB -interlace JPEG`` for JPEG images
