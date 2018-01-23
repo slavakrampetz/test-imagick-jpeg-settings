@@ -1,2 +1,7 @@
-# test-imagick-jpeg-settings
-Test JPEG imagemagick settings
+# Test JPEG imagemagick settings
+
+Find best options for ImageMagick JPEG conversion for:
+
+1. Keep good enough quality for photos
+2. Keep files smaller
+3. Fit Google PageSpeed Insights requirements
