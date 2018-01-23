@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing ImageMagick conversion rate for JPEG photos</title>
+	<meta name="keywords" content="imagemagick, google pagespeed insights"/>
+	<meta name="description" content="Testing ImageMagick conversion rate for JPEG photos, 2018-01-23"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+	<style>
+		table td { text-align: right; }
+		table thead th {text-align: center; }
+		table td.t { text-align: left; }
+	</style>
+
+</head>
+<body>
+<section class="section">
+<div class="container">
+	<h1 class="title is-3">Testing ImageMagick conversion rate for JPEG photos</h1>
+<table class="table">
+	<thead>
+		<th>Quality</th>
+		<th>Settings</th>
+			<th colspan="2">300x200</th>
+			<th colspan="2">900x600</th>
+			<th colspan="2">1600x1067</th>
+			<th colspan="2">1800x1200</th>
+			<th colspan="2">total</th>
+	</thead>
+	<tbody>
+		<tr class="max">
+			<td class="t" colspan="2">Maximum (worst)</td>
+						<td>19444</td>
+				<td class="small">%</td>
+						<td>124000</td>
+				<td class="small">%</td>
+						<td>330333</td>
+				<td class="small">%</td>
+						<td>398270</td>
+				<td class="small">%</td>
+						<td>872047</td>
+			<td class="small">%</td>
+		</tr>
+				<tr>
+			<td>
+				75				<span class="tag is-light" title="-quality 75 -colorspace sRGB">?</span>
+			</td>
+			<td class="t">None</td>
+							<td>
+					<a title="File size: 14505 bytes" target="_blank" href="/i/q75/z/300.jpg">14505</a>
+				</td>
+				<td>
+					25.40				</td>
+							<td>
+					<a title="File size: 90327 bytes" target="_blank" href="/i/q75/z/900.jpg">90327</a>
+				</td>
+				<td>
+					27.16				</td>
+							<td>
+					<a title="File size: 233731 bytes" target="_blank" href="/i/q75/z/1600.jpg">233731</a>
+				</td>
+				<td>
+					29.24				</td>
+							<td>
+					<a title="File size: 280521 bytes" target="_blank" href="/i/q75/z/1800.jpg">280521</a>
+				</td>
+				<td>
+					29.57				</td>
+						<td>619084</td>
+			<td>27.84</td>
+		</tr>
+				<tr>
+			<td>
+				75				<span class="tag is-light" title="-quality 75 -colorspace sRGB -interlace JPEG">?</span>
+			</td>
+			<td class="t">Interlace</td>
+							<td>
+					<a title="File size: 14493 bytes" target="_blank" href="/i/q75/i/300.jpg">14493</a>
+				</td>
+				<td>
+					25.46				</td>
+							<td>
+					<a title="File size: 88843 bytes" target="_blank" href="/i/q75/i/900.jpg">88843</a>
+				</td>
+				<td>
+					28.35				</td>
+							<td>
+					<a title="File size: 232264 bytes" target="_blank" href="/i/q75/i/1600.jpg">232264</a>
+				</td>
+				<td>
+					29.69				</td>
+							<td>
+					<a title="File size: 279510 bytes" target="_blank" href="/i/q75/i/1800.jpg">279510</a>
+				</td>
+				<td>
+					29.82				</td>
+						<td>615110</td>
+			<td>28.33</td>
+		</tr>
+				<tr>
+			<td>
+				75				<span class="tag is-light" title="-quality 75 -colorspace sRGB -sampling-factor 4:2:0">?</span>
+			</td>
+			<td class="t">Sampling factor</td>
+							<td>
+					<a title="File size: 11432 bytes" target="_blank" href="/i/q75/s/300.jpg">11432</a>
+				</td>
+				<td>
+					41.21				</td>
+							<td>
+					<a title="File size: 70735 bytes" target="_blank" href="/i/q75/s/900.jpg">70735</a>
+				</td>
+				<td>
+					42.96				</td>
+							<td>
+					<a title="File size: 179709 bytes" target="_blank" href="/i/q75/s/1600.jpg">179709</a>
+				</td>
+				<td>
+					45.60				</td>
+							<td>
+					<a title="File size: 215033 bytes" target="_blank" href="/i/q75/s/1800.jpg">215033</a>
+				</td>
+				<td>
+					46.01				</td>
+						<td>476909</td>
+			<td>43.95</td>
+		</tr>
+				<tr>
+			<td>
+				75				<span class="tag is-light" title="-quality 75 -colorspace sRGB -sampling-factor 4:2:0 -interlace JPEG">?</span>
+			</td>
+			<td class="t">Sampling factor + Interlace</td>
+							<td>
+					<a title="File size: 11356 bytes" target="_blank" href="/i/q75/si/300.jpg">11356</a>
+				</td>
+				<td>
+					41.60				</td>
+							<td>
+					<a title="File size: 69178 bytes" target="_blank" href="/i/q75/si/900.jpg">69178</a>
+				</td>
+				<td>
+					44.21				</td>
+							<td>
+					<a title="File size: 176552 bytes" target="_blank" href="/i/q75/si/1600.jpg">176552</a>
+				</td>
+				<td>
+					46.55				</td>
+							<td>
+					<a title="File size: 211682 bytes" target="_blank" href="/i/q75/si/1800.jpg">211682</a>
+				</td>
+				<td>
+					46.85				</td>
+						<td>468768</td>
+			<td>44.80</td>
+		</tr>
+				<tr>
+			<td>
+				80				<span class="tag is-light" title="-quality 80 -colorspace sRGB">?</span>
+			</td>
+			<td class="t">None</td>
+							<td>
+					<a title="File size: 16520 bytes" target="_blank" href="/i/q80/z/300.jpg">16520</a>
+				</td>
+				<td>
+					15.04				</td>
+							<td>
+					<a title="File size: 103970 bytes" target="_blank" href="/i/q80/z/900.jpg">103970</a>
+				</td>
+				<td>
+					16.15				</td>
+							<td>
+					<a title="File size: 272595 bytes" target="_blank" href="/i/q80/z/1600.jpg">272595</a>
+				</td>
+				<td>
+					17.48				</td>
+							<td>
+					<a title="File size: 327853 bytes" target="_blank" href="/i/q80/z/1800.jpg">327853</a>
+				</td>
+				<td>
+					17.68				</td>
+						<td>720938</td>
+			<td>16.59</td>
+		</tr>
+				<tr>
+			<td>
+				80				<span class="tag is-light" title="-quality 80 -colorspace sRGB -interlace JPEG">?</span>
+			</td>
+			<td class="t">Interlace</td>
+							<td>
+					<a title="File size: 16405 bytes" target="_blank" href="/i/q80/i/300.jpg">16405</a>
+				</td>
+				<td>
+					15.63				</td>
+							<td>
+					<a title="File size: 102143 bytes" target="_blank" href="/i/q80/i/900.jpg">102143</a>
+				</td>
+				<td>
+					17.63				</td>
+							<td>
+					<a title="File size: 270318 bytes" target="_blank" href="/i/q80/i/1600.jpg">270318</a>
+				</td>
+				<td>
+					18.17				</td>
+							<td>
+					<a title="File size: 325550 bytes" target="_blank" href="/i/q80/i/1800.jpg">325550</a>
+				</td>
+				<td>
+					18.26				</td>
+						<td>714416</td>
+			<td>17.42</td>
+		</tr>
+				<tr>
+			<td>
+				80				<span class="tag is-light" title="-quality 80 -colorspace sRGB -sampling-factor 4:2:0">?</span>
+			</td>
+			<td class="t">Sampling factor</td>
+							<td>
+					<a title="File size: 12875 bytes" target="_blank" href="/i/q80/s/300.jpg">12875</a>
+				</td>
+				<td>
+					33.78				</td>
+							<td>
+					<a title="File size: 80500 bytes" target="_blank" href="/i/q80/s/900.jpg">80500</a>
+				</td>
+				<td>
+					35.08				</td>
+							<td>
+					<a title="File size: 206295 bytes" target="_blank" href="/i/q80/s/1600.jpg">206295</a>
+				</td>
+				<td>
+					37.55				</td>
+							<td>
+					<a title="File size: 247488 bytes" target="_blank" href="/i/q80/s/1800.jpg">247488</a>
+				</td>
+				<td>
+					37.86				</td>
+						<td>547158</td>
+			<td>36.07</td>
+		</tr>
+				<tr>
+			<td>
+				80				<span class="tag is-light" title="-quality 80 -colorspace sRGB -sampling-factor 4:2:0 -interlace JPEG">?</span>
+			</td>
+			<td class="t">Sampling factor + Interlace</td>
+							<td>
+					<a title="File size: 12697 bytes" target="_blank" href="/i/q80/si/300.jpg">12697</a>
+				</td>
+				<td>
+					34.70				</td>
+							<td>
+					<a title="File size: 78452 bytes" target="_blank" href="/i/q80/si/900.jpg">78452</a>
+				</td>
+				<td>
+					36.73				</td>
+							<td>
+					<a title="File size: 202499 bytes" target="_blank" href="/i/q80/si/1600.jpg">202499</a>
+				</td>
+				<td>
+					38.70				</td>
+							<td>
+					<a title="File size: 243335 bytes" target="_blank" href="/i/q80/si/1800.jpg">243335</a>
+				</td>
+				<td>
+					38.90				</td>
+						<td>536983</td>
+			<td>37.26</td>
+		</tr>
+				<tr>
+			<td>
+				85				<span class="tag is-light" title="-quality 85 -colorspace sRGB">?</span>
+			</td>
+			<td class="t">None</td>
+							<td>
+					<a title="File size: 19444 bytes" target="_blank" href="/i/q85/z/300.jpg">19444</a>
+				</td>
+				<td>
+					0.00				</td>
+							<td>
+					<a title="File size: 124000 bytes" target="_blank" href="/i/q85/z/900.jpg">124000</a>
+				</td>
+				<td>
+					0.00				</td>
+							<td>
+					<a title="File size: 330333 bytes" target="_blank" href="/i/q85/z/1600.jpg">330333</a>
+				</td>
+				<td>
+					0.00				</td>
+							<td>
+					<a title="File size: 398270 bytes" target="_blank" href="/i/q85/z/1800.jpg">398270</a>
+				</td>
+				<td>
+					0.00				</td>
+						<td>872047</td>
+			<td>0.00</td>
+		</tr>
+				<tr>
+			<td>
+				85				<span class="tag is-light" title="-quality 85 -colorspace sRGB -interlace JPEG">?</span>
+			</td>
+			<td class="t">Interlace</td>
+							<td>
+					<a title="File size: 19147 bytes" target="_blank" href="/i/q85/i/300.jpg">19147</a>
+				</td>
+				<td>
+					1.53				</td>
+							<td>
+					<a title="File size: 121638 bytes" target="_blank" href="/i/q85/i/900.jpg">121638</a>
+				</td>
+				<td>
+					1.90				</td>
+							<td>
+					<a title="File size: 326084 bytes" target="_blank" href="/i/q85/i/1600.jpg">326084</a>
+				</td>
+				<td>
+					1.29				</td>
+							<td>
+					<a title="File size: 393819 bytes" target="_blank" href="/i/q85/i/1800.jpg">393819</a>
+				</td>
+				<td>
+					1.12				</td>
+						<td>860688</td>
+			<td>1.46</td>
+		</tr>
+				<tr>
+			<td>
+				85				<span class="tag is-light" title="-quality 85 -colorspace sRGB -sampling-factor 4:2:0">?</span>
+			</td>
+			<td class="t">Sampling factor</td>
+							<td>
+					<a title="File size: 14872 bytes" target="_blank" href="/i/q85/s/300.jpg">14872</a>
+				</td>
+				<td>
+					23.51				</td>
+							<td>
+					<a title="File size: 94438 bytes" target="_blank" href="/i/q85/s/900.jpg">94438</a>
+				</td>
+				<td>
+					23.84				</td>
+							<td>
+					<a title="File size: 245593 bytes" target="_blank" href="/i/q85/s/1600.jpg">245593</a>
+				</td>
+				<td>
+					25.65				</td>
+							<td>
+					<a title="File size: 295518 bytes" target="_blank" href="/i/q85/s/1800.jpg">295518</a>
+				</td>
+				<td>
+					25.80				</td>
+						<td>650421</td>
+			<td>24.70</td>
+		</tr>
+				<tr>
+			<td>
+				85				<span class="tag is-light" title="-quality 85 -colorspace sRGB -sampling-factor 4:2:0 -interlace JPEG">?</span>
+			</td>
+			<td class="t">Sampling factor + Interlace</td>
+							<td>
+					<a title="File size: 14610 bytes" target="_blank" href="/i/q85/si/300.jpg">14610</a>
+				</td>
+				<td>
+					24.86				</td>
+							<td>
+					<a title="File size: 91654 bytes" target="_blank" href="/i/q85/si/900.jpg">91654</a>
+				</td>
+				<td>
+					26.09				</td>
+							<td>
+					<a title="File size: 239804 bytes" target="_blank" href="/i/q85/si/1600.jpg">239804</a>
+				</td>
+				<td>
+					27.41				</td>
+							<td>
+					<a title="File size: 288810 bytes" target="_blank" href="/i/q85/si/1800.jpg">288810</a>
+				</td>
+				<td>
+					27.48				</td>
+						<td>634878</td>
+			<td>26.46</td>
+		</tr>
+			</tbody>
+</table>
+</div>
+</section>
+</body>
+</html>
